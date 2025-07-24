@@ -1,0 +1,95 @@
+import React from 'react';
+import { Code, Lightbulb, Users } from 'lucide-react';
+
+const About = () => {
+  const highlights = [
+    {
+      icon: <Code className="w-8 h-8 text-blue-400" />,
+      title: "Clean Code",
+      description: "Writing maintainable, scalable code with best practices and modern development patterns."
+    },
+    {
+      icon: <Lightbulb className="w-8 h-8 text-teal-400" />,
+      title: "Problem Solving",
+      description: "Analytical approach to breaking down complex problems into manageable solutions."
+    },
+    {
+      icon: <Users className="w-8 h-8 text-purple-400" />,
+      title: "Collaboration",
+      description: "Strong communication skills and experience working in agile development teams."
+    }
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-gray-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            About Me
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-teal-400 mx-auto"></div>
+        </div>
+        
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 className="text-2xl font-semibold text-white mb-6">
+              My Development Journey
+            </h3>
+            <div className="space-y-4 text-gray-300 leading-relaxed">
+              <p>
+                I'm a passionate PHP developer with 2+ years of experience creating 
+                web applications that solve real-world problems. My journey began with a 
+                fascination for how things work behind the scenes on the web.
+              </p>
+              <p>
+                Starting with HTML, CSS, and JavaScript, I quickly fell in love with the 
+                problem-solving aspect of programming. I've since expanded my skills to 
+                include modern frameworks like React, Node.js, and various databases.
+              </p>
+              <p>
+                I thrive in collaborative environments and enjoy mentoring junior developers. 
+                Currently, I'm focused on building scalable applications and exploring new 
+                technologies like cloud computing and microservices architecture.
+              </p>
+            </div>
+            
+            <div className="mt-8">
+              <h4 className="text-lg font-semibold text-white mb-4">When I'm not coding:</h4>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Contributing to open source projects</li>
+                <li>• Reading tech blogs and learning new technologies</li>
+                <li>• Photography and hiking</li>
+                <li>• Playing guitar and cooking</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="grid gap-6">
+            {highlights.map((item, index) => (
+              <div 
+                key={index}
+                className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105"
+              >
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-white mb-2">
+                      {item.title}
+                    </h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
