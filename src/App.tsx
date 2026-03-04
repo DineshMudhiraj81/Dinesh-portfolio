@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   useEffect(() => {
     // Smooth scrolling for anchor links
@@ -24,6 +25,7 @@ function App() {
       }
     };
 
+    
     // Add event listeners to all anchor links
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {

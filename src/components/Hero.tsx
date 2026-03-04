@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-300 mb-4">
-            PHP Developer
+            MERN Stack Developer
           </p>
           
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -42,14 +42,14 @@ const Hero = () => {
           
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/DineshMudhiraj81"
               className="text-gray-400 hover:text-white transition-colors duration-200 transform hover:scale-110"
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dinesh-kumar-28b091260"
               className="text-gray-400 hover:text-white transition-colors duration-200 transform hover:scale-110"
               aria-label="LinkedIn"
             >

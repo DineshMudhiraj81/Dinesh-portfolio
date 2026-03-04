@@ -49,13 +49,13 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       name: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/DineshMudhiraj81",
       color: "hover:text-gray-300"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/dinesh-kumar-28b091260",
       color: "hover:text-blue-400"
     },
     {

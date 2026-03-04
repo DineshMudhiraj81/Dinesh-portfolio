@@ -37,19 +37,23 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                I'm a passionate PHP developer with 2+ years of experience creating 
-                web applications that solve real-world problems. My journey began with a 
-                fascination for how things work behind the scenes on the web.
+                I'm a passionate MERN Stack Developer with 2+ years of experience
+                building dynamic and scalable web applications that solve real-world
+                problems. My journey began with a curiosity about how modern web
+                applications work behind the scenes.
               </p>
               <p>
-                Starting with HTML, CSS, and JavaScript, I quickly fell in love with the 
-                problem-solving aspect of programming. I've since expanded my skills to 
-                include modern frameworks like React, Node.js, and various databases.
+                Starting with HTML, CSS, and JavaScript, I developed a strong interest in
+                the problem-solving aspects of programming. Over time, I expanded my
+                expertise in the MERN stack (MongoDB, Express.js, React.js, and Node.js)
+                to build full-stack applications with modern and efficient architectures.
               </p>
               <p>
-                I thrive in collaborative environments and enjoy mentoring junior developers. 
-                Currently, I'm focused on building scalable applications and exploring new 
-                technologies like cloud computing and microservices architecture.
+                I enjoy working in collaborative team environments, contributing to clean and
+                maintainable code, and continuously improving my development skills. Currently,
+                I am focused on building scalable full-stack applications, improving performance,
+                and exploring advanced technologies such as cloud services, REST APIs, and
+                microservices architecture.
               </p>
             </div>
             
@@ -59,7 +63,7 @@ const About = () => {
                 <li>• Contributing to open source projects</li>
                 <li>• Reading tech blogs and learning new technologies</li>
                 <li>• Photography and hiking</li>
-                <li>• Playing guitar and cooking</li>
+                
               </ul>
             </div>
           </div>
