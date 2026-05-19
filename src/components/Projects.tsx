@@ -4,23 +4,66 @@ import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Careers at BSIT",
-      description: "Full-stack job portal: Apply jobs, resume upload, tracking, admin module. Built with PHP and MySQL",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "Bootstrap"],
-      liveUrl: "https://careers.bsitsoftware.com/",
-      // githubUrl: "#",
-      features: ["Real-time updates", "User authentication", "Job Filtering", "File uploads"]
-    },
+  title: "Careers at BSIT",
+  description: "Full-stack job portal: Apply jobs, resume upload, job tracking, and admin dashboard built using MERN Stack.",
+  
+  image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+
+  technologies: [
+    "MongoDB",
+    "Express.js",
+    "React.js",
+    "Node.js",
+    "Redux",
+    "JWT Authentication",
+    "Tailwind CSS"
+  ],
+
+  liveUrl: "https://careers.bsitsoftware.com/",
+
+  // githubUrl: "#",
+
+  features: [
+    "Real-time updates",
+    "User authentication",
+    "Job filtering",
+    "Resume uploads",
+    "Admin dashboard",
+    "REST API integration"
+  ]
+},
     {
-      title: "Find Your Hostel",
-      description: "Platform with hostel listings, booking, reviews, and user profiles and User/Agent modules, filters and wishlist. Built with PHP and MySQL",
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "Bootstrap"],
-      liveUrl: "https://bsitsoftware.com/FindMyHostel",
-      // githubUrl: "#",
-      features: ["Amenities", "Bookings", "Reviews", "Ratings", "Pricing", "Filter"]
-    }
+  title: "Tutor Management System",
+
+  description: "Comprehensive tutor management platform with tutor listings, student bookings, reviews, scheduling, authentication, and admin dashboard built using MERN Stack.",
+
+  image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+
+  technologies: [
+    "MongoDB",
+    "Express.js",
+    "React.js",
+    "Node.js",
+    "JWT Authentication",
+    "Redux",
+    "Tailwind CSS"
+  ],
+
+  liveUrl: "https://bsitsoftware.com/FindMyHostel",
+
+  // githubUrl: "#",
+
+  features: [
+    "Tutor Listings",
+    "Student Bookings",
+    "Reviews & Ratings",
+    "Schedule Management",
+    "Advanced Filters",
+    "Wishlist",
+    "Admin Dashboard",
+    "User Authentication"
+  ]
+}
     // {
     //   title: "Weather Forecast App",
     //   description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather information. Responsive design with dark mode support.",
@@ -50,7 +93,7 @@ const Projects = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-teal-400 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on over the past 2 years. Each project 
+            Here are some of the projects I've worked on over the past 3 years. Each project 
             showcases different skills and technologies I've learned and applied.
           </p>
         </div>
@@ -107,7 +150,7 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <div className="flex space-x-4">
+                {/* <div className="flex space-x-4">
                   <a
                     href={project.liveUrl}
                     className="flex items-center text-blue-400 hover:text-blue-300 transition-colors font-medium"
@@ -115,14 +158,8 @@ const Projects = () => {
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
                   </a>
-                  {/* <a
-                    href={project.githubUrl}
-                    className="flex items-center text-gray-400 hover:text-white transition-colors font-medium"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Source Code
-                  </a> */}
-                </div>
+                  
+                </div> */}
               </div>
             </div>
           ))}

@@ -22,7 +22,7 @@ const Hero = () => {
           
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
             Passionate about creating beautiful, functional web applications with modern technologies. 
-            2+ years of experience building scalable solutions and bringing ideas to life.
+            around 3 years of experience building scalable solutions and bringing ideas to life.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

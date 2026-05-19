@@ -21,7 +21,7 @@ const Footer = () => {
         
         <div className="mt-4 pt-4 border-t border-gray-800">
           <p className="text-center text-gray-500 text-xs">
-            This portfolio showcases 2+ years of development experience and continuous learning in modern web technologies.
+            This portfolio showcases around 3 years of development experience and continuous learning in modern web technologies.
           </p>
         </div>
       </div>

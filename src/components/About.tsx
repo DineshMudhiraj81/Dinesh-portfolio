@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Lightbulb, Users } from 'lucide-react';
 
 const About = () => {
@@ -37,7 +36,7 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                I'm a passionate MERN Stack Developer with 2+ years of experience
+                I'm a passionate MERN Stack Developer around 3 years of experience
                 building dynamic and scalable web applications that solve real-world
                 problems. My journey began with a curiosity about how modern web
                 applications work behind the scenes.

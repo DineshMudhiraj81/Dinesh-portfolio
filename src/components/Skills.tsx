@@ -44,7 +44,7 @@ const Skills = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-teal-400 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Here are the technologies I work with regularly and my proficiency levels based on 
-            2+ years of hands-on experience and continuous learning.
+            3 years of hands-on experience and continuous learning.
           </p>
         </div>
         
