@@ -1,5 +1,5 @@
-import React from 'react';
-import { Heart } from 'lucide-react';
+import React from "react";
+import { Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,17 +11,18 @@ const Footer = () => {
               © {new Date().getFullYear()} Dinesh Kumar. All rights reserved.
             </p>
           </div>
-          
+
           <div className="flex items-center text-gray-400 text-sm">
             <span>Built with</span>
             <Heart size={16} className="mx-2 text-red-500" />
             <span>using React & Tailwind CSS</span>
           </div>
         </div>
-        
+
         <div className="mt-4 pt-4 border-t border-gray-800">
           <p className="text-center text-gray-500 text-xs">
-            This portfolio showcases around 3 years of development experience and continuous learning in modern web technologies.
+            This portfolio showcases around 3 years of development experience
+            and continuous learning in modern web technologies.
           </p>
         </div>
       </div>

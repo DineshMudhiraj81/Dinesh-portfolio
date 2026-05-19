@@ -1,69 +1,73 @@
-import React from 'react';
-import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
+import React from "react";
+import { ExternalLink, Github, Calendar, Users } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-  title: "Careers at BSIT",
-  description: "Full-stack job portal: Apply jobs, resume upload, job tracking, and admin dashboard built using MERN Stack.",
-  
-  image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+      title: "Careers at BSIT",
+      description:
+        "Full-stack job portal: Apply jobs, resume upload, job tracking, and admin dashboard built using MERN Stack.",
 
-  technologies: [
-    "MongoDB",
-    "Express.js",
-    "React.js",
-    "Node.js",
-    "Redux",
-    "JWT Authentication",
-    "Tailwind CSS"
-  ],
+      image:
+        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
 
-  liveUrl: "https://careers.bsitsoftware.com/",
+      technologies: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "Redux",
+        "JWT Authentication",
+        "Tailwind CSS",
+      ],
 
-  // githubUrl: "#",
+      liveUrl: "https://careers.bsitsoftware.com/",
 
-  features: [
-    "Real-time updates",
-    "User authentication",
-    "Job filtering",
-    "Resume uploads",
-    "Admin dashboard",
-    "REST API integration"
-  ]
-},
+      // githubUrl: "#",
+
+      features: [
+        "Real-time updates",
+        "User authentication",
+        "Job filtering",
+        "Resume uploads",
+        "Admin dashboard",
+        "REST API integration",
+      ],
+    },
     {
-  title: "Tutor Management System",
+      title: "Tutor Management System",
 
-  description: "Comprehensive tutor management platform with tutor listings, student bookings, reviews, scheduling, authentication, and admin dashboard built using MERN Stack.",
+      description:
+        "Comprehensive tutor management platform with tutor listings, student bookings, reviews, scheduling, authentication, and admin dashboard built using MERN Stack.",
 
-  image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image:
+        "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
 
-  technologies: [
-    "MongoDB",
-    "Express.js",
-    "React.js",
-    "Node.js",
-    "JWT Authentication",
-    "Redux",
-    "Tailwind CSS"
-  ],
+      technologies: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "JWT Authentication",
+        "Redux",
+        "Tailwind CSS",
+      ],
 
-  liveUrl: "https://bsitsoftware.com/FindMyHostel",
+      liveUrl: "https://bsitsoftware.com/FindMyHostel",
 
-  // githubUrl: "#",
+      // githubUrl: "#",
 
-  features: [
-    "Tutor Listings",
-    "Student Bookings",
-    "Reviews & Ratings",
-    "Schedule Management",
-    "Advanced Filters",
-    "Wishlist",
-    "Admin Dashboard",
-    "User Authentication"
-  ]
-}
+      features: [
+        "Tutor Listings",
+        "Student Bookings",
+        "Reviews & Ratings",
+        "Schedule Management",
+        "Advanced Filters",
+        "Wishlist",
+        "Admin Dashboard",
+        "User Authentication",
+      ],
+    },
     // {
     //   title: "Weather Forecast App",
     //   description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather information. Responsive design with dark mode support.",
@@ -93,40 +97,43 @@ const Projects = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-teal-400 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on over the past 3 years. Each project 
-            showcases different skills and technologies I've learned and applied.
+            Here are some of the projects I've worked on over the past 3 years.
+            Each project showcases different skills and technologies I've
+            learned and applied.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105 group"
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-400 mb-2">Key Features:</h4>
+                  <h4 className="text-sm font-semibold text-gray-400 mb-2">
+                    Key Features:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.features.map((feature, featureIndex) => (
-                      <span 
+                      <span
                         key={featureIndex}
                         className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs border border-gray-600"
                       >
@@ -135,12 +142,14 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-400 mb-2">Technologies:</h4>
+                  <h4 className="text-sm font-semibold text-gray-400 mb-2">
+                    Technologies:
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <span 
+                      <span
                         key={techIndex}
                         className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30"
                       >
@@ -149,7 +158,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* <div className="flex space-x-4">
                   <a
                     href={project.liveUrl}
@@ -164,7 +173,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        
+
         {/* <div className="text-center mt-12">
           <p className="text-gray-400 mb-4">More projects available on GitHub</p>
           <a

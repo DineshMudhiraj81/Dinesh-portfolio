@@ -1,27 +1,37 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const contactInfo = [
@@ -29,20 +39,20 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6 text-blue-400" />,
       title: "Email",
       value: "nanidinesh965@gmail.com",
-      href: "mailto:nanidinesh965@gmail.com"
+      href: "mailto:nanidinesh965@gmail.com",
     },
     {
       icon: <Phone className="w-6 h-6 text-teal-400" />,
       title: "Phone",
       value: "7286881281",
-      href: "tel:+917286881281"
+      href: "tel:+917286881281",
     },
     {
       icon: <MapPin className="w-6 h-6 text-purple-400" />,
       title: "Location",
       value: "Hyderabad, India",
-      href: "#"
-    }
+      href: "#",
+    },
   ];
 
   const socialLinks = [
@@ -50,20 +60,20 @@ const Contact = () => {
       icon: <Github className="w-6 h-6" />,
       name: "GitHub",
       href: "https://github.com/DineshMudhiraj81",
-      color: "hover:text-gray-300"
+      color: "hover:text-gray-300",
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/dinesh-kumar-28b091260",
-      color: "hover:text-blue-400"
+      color: "hover:text-blue-400",
     },
     {
       icon: <Twitter className="w-6 h-6" />,
       name: "Twitter",
       href: "https://twitter.com",
-      color: "hover:text-blue-300"
-    }
+      color: "hover:text-blue-300",
+    },
   ];
 
   return (
@@ -75,18 +85,18 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-teal-400 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. 
+            I'm always interested in new opportunities and exciting projects.
             Let's discuss how we can work together to bring your ideas to life.
           </p>
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
             <h3 className="text-2xl font-semibold text-white mb-8">
               Let's Connect
             </h3>
-            
+
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
                 <a
@@ -94,23 +104,21 @@ const Contact = () => {
                   href={info.href}
                   className="flex items-center p-4 bg-gray-900 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105 group"
                 >
-                  <div className="flex-shrink-0 mr-4">
-                    {info.icon}
-                  </div>
+                  <div className="flex-shrink-0 mr-4">{info.icon}</div>
                   <div>
                     <h4 className="text-white font-medium group-hover:text-blue-400 transition-colors">
                       {info.title}
                     </h4>
-                    <p className="text-gray-300 text-sm">
-                      {info.value}
-                    </p>
+                    <p className="text-gray-300 text-sm">{info.value}</p>
                   </div>
                 </a>
               ))}
             </div>
-            
+
             <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-white mb-4">
+                Follow Me
+              </h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
@@ -125,17 +133,20 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div>
             <h3 className="text-2xl font-semibold text-white mb-8">
               Send a Message
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -149,9 +160,12 @@ const Contact = () => {
                     placeholder="Your Name"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -166,9 +180,12 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -182,9 +199,12 @@ const Contact = () => {
                   placeholder="Project Collaboration"
                 />
               </div>
-              
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -198,7 +218,7 @@ const Contact = () => {
                   placeholder="Tell me about your project or opportunity..."
                 />
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 flex items-center justify-center"
